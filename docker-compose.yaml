@@ -17,11 +17,9 @@ services:
     tty: true
     networks:
       - moodle_network
-
 volumes:
   python_playground:
-
 networks:
   moodle_network:
     external: true
-    name: ${MOODLE_NETWORK:-moodle-docker_default}
+    name: moodle-docker_default
